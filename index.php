@@ -37,3 +37,10 @@ require_once __DIR__ . '/layouts/head.php';
 </body>
 
 </html>
+
+<!-- 
+
+git remote add origin https://github.com/MarcoGotti/php-oop-2.git
+git branch -M main
+git push -u origin main
+ -->
