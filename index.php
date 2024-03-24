@@ -1,7 +1,7 @@
 <?php
 
 require __DIR__ . '/database/db.php';
-require_once __DIR__ . '/layouts/head.php'
+require_once __DIR__ . '/layouts/head.php';
 
 ?>
 
@@ -14,7 +14,7 @@ require_once __DIR__ . '/layouts/head.php'
             <?php foreach ($products as $product) : ?>
 
                 <div class="col">
-                    <div class="card position-relative">
+                    <div class="card position-relative hov">
                         <div class="position-absolute top-0 end-0 m-3 text-end">
                             <span class="bg-warning p-2 border border-1 rounded"><?= $product->icon ?></span>
                             <div class="mt-3 px-1 bg-success border border-1 rounded text-white"><?= $product->type ?></div>

@@ -14,7 +14,4 @@ $products =
         new Product('dog', 'beauty', 10.25, 'Brush'),
     ];
 
-/* $dog = new Animal('dog');
-var_dump($dog);
-$product = new Product('cat', 'food', 10.45); */
-var_dump($products);
+//var_dump($products);
