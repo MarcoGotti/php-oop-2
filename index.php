@@ -22,7 +22,7 @@ require_once __DIR__ . '/layouts/head.php';
                         </div>
                         <img class="card-img-top" src="<?= $product->image->image ?>" alt="Title" />
                         <div class="card-body">
-                            <h4 class="card-title"><?= $product->title ?></h4>
+                            <h4 class="card-title abc"><?= $product->title ?></h4>
                             <p class="card-text"><?= $product->price . ' £' ?></p>
                         </div>
                     </div>
