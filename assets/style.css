@@ -3,6 +3,6 @@
   transform: scale(1.05);
 }
 
-.abc {
-  color: blue;
+.hov {
+  transition: all 1s;
 }
