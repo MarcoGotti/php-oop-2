@@ -2,7 +2,3 @@
   cursor: pointer;
   transform: scale(1.05);
 }
-
-.hov {
-  transition: all 1s;
-}

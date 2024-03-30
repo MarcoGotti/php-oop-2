@@ -1,15 +1,25 @@
 <?php
 
-include_once __DIR__ . '/Animal.php';
-include_once __DIR__ . '/SetImage.php';
-
-class Product extends Animal
+class Product
 {
-    public function __construct($animal, public string $type, public float $price, public string $title)
-    {
-        parent::__construct($animal);
-        $this->type = $type;
-        $this->price = $price;
-        $this->title = $title;
+    public $image;
+
+    function __construct(
+        public string $animal,
+        public string $name,
+        public string $brand,
+        public float $price,
+        public int $imageNumb,
+    ) {
+        $this->image = "https://picsum.photos/id/$imageNumb/200/300";
     }
-}
+
+    public static function setIcon($animal, $type)
+    {
+        if ($type === 'House' || $animal === 'dog') {
+            return '<i class="fa-solid fa-bone"></i>';
+        } else {
+            return '<i class="fa-solid fa-cat"></i>';
+        }
+    }
+};

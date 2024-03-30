@@ -1,8 +1,18 @@
 <?php
 
+
+
+
+
+
+
+
+
 require __DIR__ . '/database/db.php';
 require_once __DIR__ . '/layouts/head.php';
 
+var_dump($products);
+var_dump(Food::$type);
 ?>
 
 
@@ -13,7 +23,7 @@ require_once __DIR__ . '/layouts/head.php';
 
             <?php foreach ($products as $product) : ?>
 
-                <div class="col">
+                <!-- <div class="col">
                     <div class="card position-relative hov">
                         <div class="position-absolute top-0 end-0 m-3 text-end">
                             <span class="bg-warning p-2 border border-1 rounded"><?= $product->icon ?></span>
@@ -26,7 +36,7 @@ require_once __DIR__ . '/layouts/head.php';
                             <p class="card-text"><?= $product->price . ' £' ?></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             <?php endforeach ?>
 
