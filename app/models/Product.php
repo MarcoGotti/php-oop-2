@@ -2,7 +2,7 @@
 
 class Product
 {
-    public $image;
+    public string $image;
 
     function __construct(
         public string $animal,
